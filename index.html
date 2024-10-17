@@ -21,6 +21,27 @@
                 margin: 0;
                 padding: 0;
             }
+
+            /* Fixed Navigation Bar */
+            nav {
+                background-color: #304c89;
+                position: fixed;
+                top: 0;
+                width: 100%;
+                z-index: 1000;
+                padding: 1rem;
+                text-align: center;
+            }
+            nav a {
+                color: white;
+                text-decoration: none;
+                margin: 0 15px;
+                font-size: 1.2rem;
+            }
+            nav a:hover {
+                text-decoration: underline;
+            }
+
             .masthead {
                 background: rgba(48, 76, 137, 0.8); /* #304c89 */
                 color: white;
@@ -28,29 +49,37 @@
                 text-align: center;
                 position: relative;
                 z-index: 10;
+                margin-top: 70px; /* Offset for fixed navbar */
             }
+            
+            /* Make the section semi-transparent with space for background */
             .container {
-                max-width: 1200px;
+                max-width: 900px;
                 margin: auto;
                 padding: 2rem;
-                background-color: #e8e5da; /* Soft beige */
+                background-color: rgba(232, 229, 218, 0.8); /* Soft beige with transparency */
                 border-radius: 8px;
                 box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
                 position: relative;
                 z-index: 10;
             }
+
             section {
-                margin-top: 2rem;
+                margin-top: 4rem;
             }
+
             h2 {
                 color: #304c89; /* Dark blue */
             }
+
             h4 {
                 color: #648de5; /* Light blue */
             }
-            p, ol {
+
+            p, ul {
                 color: #333;
             }
+
             .bg-video {
                 position: fixed;
                 top: 0;
@@ -60,12 +89,14 @@
                 z-index: -1;
                 filter: brightness(50%);
             }
+
             .social-icons {
                 position: fixed;
                 bottom: 1rem;
                 left: 1rem;
                 z-index: 10;
             }
+
             .social-icons a {
                 color: white;
                 text-decoration: none;
@@ -75,23 +106,27 @@
                 font-size: 1.25rem;
                 color: white;
             }
+
             .bg-light {
-                
                 color: #304c89;
             }
+
             .container h2, .container h4 {
                 margin-bottom: 15px;
             }
+
             .btn-dark {
                 background-color: #CDC392; /* Gold color */
                 border-color: #CDC392;
             }
+
             .moodboard-section {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-around;
                 margin-top: 2rem;
             }
+
             .moodboard-item {
                 flex: 0 1 calc(33% - 2rem);
                 margin: 1rem;
@@ -102,135 +137,74 @@
                 text-align: center;
                 color: #333;
             }
+
             .moodboard-item img {
                 width: 100%;
                 height: auto;
                 border-radius: 8px;
             }
+
             .moodboard-item p {
                 margin-top: 0.5rem;
             }
+
             .moodboard-section h4 {
                 margin-bottom: 1rem;
             }
+
             /* Colors for the moodboard items */
             .moodboard-item:nth-child(1) {
                 background-color: #CDC392; /* Gold */
             }
+
             .moodboard-item:nth-child(2) {
                 background-color: #9EB7E5; /* Light blue */
             }
+
             .moodboard-item:nth-child(3) {
                 background-color: #648de5; /* Blue */
             }
         </style>
     </head>
     <body>
+        <!-- Fixed Navbar -->
+        <nav>
+            <a href="#home">Home</a>
+            <a href="personas.html">Personas</a>
+            <a href="scenarios.html">Scenarios</a>
+            <a href="storyboard.html">Storyboard</a>
+            <a href="moodboard.html">Moodboard</a>
+        </nav>
+
         <!-- Background Video-->
         <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="assets/mp4/bg.mp4" type="video/mp4" /></video>
         
         <!-- Header-->
-        <header class="masthead">
+        <header id="home" class="masthead">
             <div class="container-fluid px-4 px-lg-0 text-white">
                 <h1 class="fst-italic lh-1 mb-4">BrainWave Diagnostics Project</h1>
                 <p class="p1">A web app utilizing Data Science and Machine Learning to analyze brain scan reports for ADHD detection.</p>
             </div>
         </header>
 
-        <!-- Main Content -->
-        <section id="personas" class="p-5">
-            <div class="container">
-                <h2>Personas</h2>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h4>Persona 1: Sarah Thompson</h4>
-                        <p><strong>Age:</strong> 38 <br><strong>Occupation:</strong> Teacher</p>
-                        <p><strong>Goals:</strong> To understand if her child’s inattention and hyperactivity are due to ADHD. She seeks reliable and scientifically backed tools.</p>
-                        <p><strong>Behaviors:</strong> Consults healthcare professionals, uses educational apps, concerned about privacy.</p>
-                        <p><strong>Motivations:</strong> Ensure her child gets appropriate help if needed while avoiding unnecessary medication.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <h4>Persona 2: Dr. David Perez</h4>
-                        <p><strong>Age:</strong> 45 <br><strong>Occupation:</strong> Pediatric Neurologist</p>
-                        <p><strong>Goals:</strong> Enhance ADHD diagnosis by integrating brain scan data with machine learning insights.</p>
-                        <p><strong>Behaviors:</strong> Utilizes technology in clinic, values scientific accuracy, follows ADHD research advancements.</p>
-                        <p><strong>Motivations:</strong> Improve patient outcomes through cutting-edge diagnostic tools.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Project Description Section -->
+        <section class="container">
+            <h2>BrainWave Diagnostics Project</h2>
+            <p><strong>Description:</strong> BrainWave Diagnostics Project is an innovative web application leveraging Data Science and Machine Learning to analyze brain scan reports for the detection and diagnosis of ADHD. This platform is designed for healthcare professionals, researchers, and individuals seeking advanced insights into brain activity patterns associated with ADHD.</p>
 
-        <section id="scenarios" class="bg-light p-5">
-            <div class="container">
-                <h2>Scenarios</h2>
-                <h4>Scenario 1: Parent Using the App for ADHD Detection</h4>
-                <p>Sarah uploads her child’s brain scan report. The system processes the data and provides an easy-to-understand summary with ADHD markers and recommends a consultation with her healthcare provider.</p>
-                
-                <h4>Scenario 2: Doctor Integrating the Tool into Clinical Practice</h4>
-                <p>Dr. Perez uploads multiple patients' brain scans. The system provides dopamine and norepinephrine transporter binding levels, theta/beta ratios, and functional connectivity metrics. The AI-based summary helps him make accurate ADHD diagnoses efficiently.</p>
-            </div>
-        </section>
+            <p>The app processes brain scans from techniques such as fMRI, SPECT, and qEEG, extracting critical data points related to structural abnormalities, functional connectivity, and neurochemical imbalances. By applying advanced machine learning models, BrainWave Diagnostics Project identifies key markers of ADHD, providing users with comprehensive, data-driven reports.</p>
 
-        <section id="storyboard" class="p-5">
-            <div class="container">
-                <h2>Storyboard</h2>
-                <p>Step-by-step interaction for Sarah’s use case:</p>
-                <ol>
-                    <li>Sarah opens the app and is prompted to upload brain scan reports.</li>
-                    <li>She selects the reports from her phone and uploads them.</li>
-                    <li>The system analyzes the fMRI, SPECT, and qEEG data.</li>
-                    <li>Sarah receives a simplified report with ADHD likelihood and a suggestion to consult a neurologist.</li>
-                    <li>She downloads or shares the report with her healthcare provider.</li>
-                </ol>
-            </div>
-        </section>
+            <h4>Features:</h4>
+            <ul>
+                <li><strong>AI-Powered Analysis:</strong> Automatically analyzes brain scans using Machine Learning algorithms trained to detect ADHD-specific patterns.</li>
+                <li><strong>Data-Driven Reports:</strong> Generate detailed reports highlighting gray matter volume, brainwave activity (theta/beta ratio), and neurotransmitter activity.</li>
+                <li><strong>Multi-Imaging Format Support:</strong> Compatible with fMRI, SPECT, and qEEG data, offering comprehensive scan analysis.</li>
+                <li><strong>Predictive Diagnostics:</strong> Leverages predictive models to provide probabilistic ADHD diagnoses based on brain scan data.</li>
+                <li><strong>Interactive Visualizations:</strong> Explore in-depth visual representations of the brain’s functional and structural changes related to ADHD.</li>
+                <li><strong>Secure Data Handling:</strong> All uploaded scan data is securely stored and processed in compliance with HIPAA regulations, ensuring patient confidentiality.</li>
+            </ul>
 
-        <section id="moodboard" class="bg-light p-5">
-            <div class="container">
-                <h2>Moodboard</h2>
-                <div class="moodboard-section">
-                    <div class="moodboard-item">
-                        <img src="https://github.com/user-attachments/assets/6fac2ced-3aa2-4537-88ca-5c81763c243a" alt="Brain Scan Image">
-                    
-                        <p>Source: <a href="https://americanhealthimaging.com/brain-scan-help-diagnose-adhd/" target="_blank">
-                            Can a Brain Scan Help Diagnose ADHD?</a>
-                        </p>
-                    
-                        <p>The image displays a series of MRI brain scans depicted in vibrant colors indicating various brain activity levels or structures. These scans demonstrate significant anatomical details, potentially used in the medical evaluation of conditions such as ADHD, where brain function and structure may deviate from typical patterns.</p>
-                    </div>
-                    
-                    <div class="moodboard-item">
-                        <img src="https://github.com/user-attachments/assets/7261f2ea-f9a0-4257-aebf-18898ef1ac28" alt="Drosophila Connectome Image">
-                    
-                        <p>Source: <a href="https://www.nature.com/articles/s41586-024-07686-5?fromPaywallRec=false" target="_blank">
-                            Whole-brain annotation and multi-connectome cell typing of Drosophila</a>
-                        </p>
-                        <p>The image provides a comprehensive hierarchical annotation schema for a whole-brain connectome, detailing various neuron types and their connective pathways. Color-coded annotations and 3D renderings visualize different neuronal classes and the structural organization of the brain, illustrating complex neural interactions and the distribution of neurons across different brain regions.</p>
-                    <!-- 
-                        <img src="assets/images/neuron-icon.jpg" alt="Neuron Icon">
-                     
-                    <p>Simplified neuron icons to visually represent brain activity and neural connections.</p>
-                    -->
-                    
-                    </div>
-                    
-                    <div class="moodboard-item">
-                        <img src="https://github.com/user-attachments/assets/d979b39e-155a-4305-8202-af52feb9ad76" alt="Dopamine System Image">
-                    
-                        <p>Source: <a href="https://www.sciencedirect.com/science/article/pii/S0720048X21002333" target="_blank">
-                            Imaging of the dopamine system with focus on pharmacological MRI and neuromelanin imaging</a>
-                        </p>
-                    <!-- 
-                        <img src="assets/images/dopamine-graph.jpg" alt="Dopamine Molecule">
-                        <p>Graphs showcasing brain activity, dopamine levels, and other brain metrics used in diagnostics.</p>
-                    -->
-                        
-                    
-                        <p>Detailed MRI scan focusing on the substantia nigra, a critical area of the brain involved in dopaminergic functions. Highlighted sections provide insights into neuromelanin content, which is significant in studies of neurodegenerative disorders like Parkinson's disease. The use of advanced imaging techniques enhances the visualization and understanding of this region's structure and function.</p>
-                    </div>
-                    
-                </div>
-            </div>
+            <p>Whether you're a clinician looking for decision-support tools or a researcher in neuroscience, BrainWave Diagnostics Project offers a robust, data-driven approach to ADHD detection and analysis.</p>
         </section>
 
         <!-- Social Icons -->
