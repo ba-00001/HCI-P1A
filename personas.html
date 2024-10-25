@@ -8,7 +8,7 @@
         <title>Personas - BrainWave Diagnostics</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
         <style>
             body {
@@ -55,6 +55,29 @@
             h4 {
                 color: #648de5;
             }
+
+            .persona-section {
+                display: flex;
+                align-items: flex-start;
+                background-color: #fff;
+                padding: 1.5rem;
+                border-radius: 8px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                margin-bottom: 2rem;
+            }
+
+            .persona-image {
+                width: 100%;
+                max-width: 300px;
+                height: auto;
+                border-radius: 8px;
+                margin-right: 2rem;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .persona-details {
+                flex: 1;
+            }
         </style>
     </head>
     <body>
@@ -64,25 +87,52 @@
             <a href="scenarios.html">Scenarios</a>
             <a href="storyboard.html">Storyboard</a>
             <a href="moodboard.html">Moodboard</a>
+            <a href="flowchart.html">System Flowchart</a>
         </nav>
 
         <section id="personas" class="p-5">
             <div class="container">
                 <h2>Personas</h2>
-                <div class="row">
-                    <div class="col-md-6">
-                        <h4>Persona 1: Sarah Thompson</h4>
-                        <p><strong>Age:</strong> 38 <br><strong>Occupation:</strong> Teacher</p>
-                        <p><strong>Goals:</strong> To understand if her child’s inattention and hyperactivity are due to ADHD. She seeks reliable and scientifically backed tools.</p>
-                        <p><strong>Behaviors:</strong> Consults healthcare professionals, uses educational apps, concerned about privacy.</p>
-                        <p><strong>Motivations:</strong> Ensure her child gets appropriate help if needed while avoiding unnecessary medication.</p>
+
+                <div class="persona-section">
+                    <img src="https://github.com/user-attachments/assets/eae48481-2865-4c56-baa9-94eb66a316ab" alt="Sarah Thompson Image" class="persona-image" />
+                    <div class="persona-details">
+                        <h4>Persona 1: Parent of a Child with Suspected ADHD</h4>
+                        <p><strong>Name:</strong> Sarah Thompson <br><strong>Age:</strong> 38 <br><strong>Occupation:</strong> Teacher</p>
+
+                        <h5>Background and Goals</h5>
+                        <p>Sarah, a caring and attentive parent, has noticed behavioral patterns in her child that could suggest ADHD. Her main goal is to understand whether her child’s inattention and hyperactivity are due to ADHD and to use scientifically reliable tools to aid her decision-making. She feels a strong need for a clear diagnostic path to ensure her child receives the right support without resorting to unnecessary medication.</p>
+
+                        <h5>Behaviors</h5>
+                        <ul>
+                            <li>Regular consultations with healthcare professionals to discuss her child’s developmental needs.</li>
+                            <li>Uses educational and child development apps at home to monitor and assist in her child's learning process.</li>
+                            <li>Privacy-conscious and careful about the information she shares, especially when it comes to her child’s sensitive health data.</li>
+                        </ul>
+
+                        <h5>Motivations</h5>
+                        <p>Sarah is motivated by the desire to see her child succeed and thrive. She values scientifically backed, user-friendly tools to help her understand her child's needs, ideally without compromising on privacy. By utilizing such tools, she hopes to avoid premature or unnecessary treatment while ensuring that she takes any necessary steps early on.</p>
                     </div>
-                    <div class="col-md-6">
-                        <h4>Persona 2: Dr. David Perez</h4>
-                        <p><strong>Age:</strong> 45 <br><strong>Occupation:</strong> Pediatric Neurologist</p>
-                        <p><strong>Goals:</strong> Enhance ADHD diagnosis by integrating brain scan data with machine learning insights.</p>
-                        <p><strong>Behaviors:</strong> Utilizes technology in clinic, values scientific accuracy, follows ADHD research advancements.</p>
-                        <p><strong>Motivations:</strong> Improve patient outcomes through cutting-edge diagnostic tools.</p>
+                </div>
+
+                <div class="persona-section">
+                    <img src="https://github.com/user-attachments/assets/1db93912-0866-44d1-9042-1b0ff1b35064" alt="Dr. David Perez Image" class="persona-image" />
+                    <div class="persona-details">
+                        <h4>Persona 2: Healthcare Professional Specializing in ADHD</h4>
+                        <p><strong>Name:</strong> Dr. David Perez <br><strong>Age:</strong> 45 <br><strong>Occupation:</strong> Pediatric Neurologist</p>
+
+                        <h5>Background and Goals</h5>
+                        <p>Dr. Perez, a pediatric neurologist, specializes in diagnosing and managing ADHD in children. His primary goal is to have a reliable diagnostic tool that integrates brain scan data with machine learning insights, streamlining and enhancing the accuracy of the diagnostic process for ADHD. This would assist him in making well-informed diagnoses, particularly in borderline cases or complex presentations of ADHD.</p>
+
+                        <h5>Behaviors</h5>
+                        <ul>
+                            <li>Regularly incorporates technology into his clinical practice to provide a more detailed analysis.</li>
+                            <li>Values the scientific accuracy of any diagnostic tool he uses and keeps up with the latest ADHD research to stay at the forefront of his field.</li>
+                            <li>Uses an evidence-based approach in his diagnosis and treatment plans, and is open to tools that integrate seamlessly with his practice.</li>
+                        </ul>
+
+                        <h5>Motivations</h5>
+                        <p>Dr. Perez is motivated by the desire to improve patient outcomes. He values tools that are not only scientifically rigorous but also user-friendly for clinical applications. By combining his clinical expertise with cutting-edge technology, he seeks to elevate his diagnostic accuracy and, ultimately, enhance patient trust and satisfaction.</p>
                     </div>
                 </div>
             </div>
