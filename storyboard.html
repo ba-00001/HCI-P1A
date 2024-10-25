@@ -8,7 +8,7 @@
         <title>Storyboard - BrainWave Diagnostics</title>
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
         <style>
             body {
@@ -39,22 +39,58 @@
             }
 
             .container {
-                max-width: 1200px;
+                max-width: 1000px;
                 margin: auto;
-                padding: 2rem;
-            }
-
-            section {
-                margin-top: 70px;
+                padding: 4rem 2rem 2rem;
             }
 
             h2 {
                 color: #304c89;
+                text-align: center;
+                margin-bottom: 2rem;
             }
 
-            h4 {
-                color: #648de5;
+            .storyboard {
+                margin-bottom: 2rem;
+                padding: 1rem;
+                background-color: #fff;
+                border-radius: 8px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             }
+
+            .storyboard-header {
+                color: #648de5;
+                display: flex;
+                align-items: center;
+                margin-bottom: 1.5rem;
+            }
+
+            .storyboard-header i {
+                font-size: 1.5rem;
+                color: #304c89;
+                margin-right: 10px;
+            }
+
+            /* Flexbox to ensure correct alignment */
+            .step {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1.5rem;
+            }
+
+            .step i {
+                flex-shrink: 0; /* Prevent icon from shrinking */
+                font-size: 1.5rem;
+                margin-right: 30px;  /* Ensures space between icon and text */
+                color: #304c89;
+            }
+
+            .step p {
+                margin: 0;
+                padding: 0;
+                flex-grow: 1;  /* Allows the text to take remaining space */
+            }
+
         </style>
     </head>
     <body>
@@ -66,21 +102,79 @@
             <a href="moodboard.html">Moodboard</a>
             <a href="flowchart.html">System Flowchart</a>
             <a href="wireframe.html">Wireframe</a>
+            <a href="prototype.html">Prototype</a>
+            <a href="evaluation.html">Design Evaluation</a>
+            <a href="bibliography.html">Bibliography</a>
         </nav>
 
-        <section id="storyboard" class="p-5">
-            <div class="container">
-                <h2>Storyboard</h2>
-                <p>Step-by-step interaction for Sarah’s use case:</p>
-                <ol>
-                    <li>Sarah opens the app and is prompted to upload brain scan reports.</li>
-                    <li>She selects the reports from her phone and uploads them.</li>
-                    <li>The system analyzes the fMRI, SPECT, and qEEG data.</li>
-                    <li>Sarah receives a simplified report with ADHD likelihood and a suggestion to consult a neurologist.</li>
-                    <li>She downloads or shares the report with her healthcare provider.</li>
-                </ol>
+        <div class="container">
+            <h2>Storyboard</h2>
+
+            <!-- Storyboard for Sarah's Scenario -->
+            <div class="storyboard">
+                <div class="storyboard-header">
+                    <i class="fas fa-user"></i>
+                    <h4>Storyboard for Sarah’s Scenario</h4>
+                </div>
+
+                <div class="step">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <p><strong>Step 1:</strong> Sarah logs into BrainWave Diagnostics and sees an easy-to-follow prompt for uploading brain scans.</p>
+                </div>
+                
+                <div class="step">
+                    <i class="fas fa-file-upload"></i>
+                    <p><strong>Step 2:</strong> She selects files from her device (qEEG and SPECT) and uploads them; a status bar confirms progress.</p>
+                </div>
+
+                <div class="step">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p><strong>Step 3:</strong> The platform processes the data, showing a brief loading animation.</p>
+                </div>
+
+                <div class="step">
+                    <i class="fas fa-chart-bar"></i>
+                    <p><strong>Step 4:</strong> A summary report appears with an ADHD likelihood score and markers, like the theta/beta ratio, presented in simple visuals.</p>
+                </div>
+
+                <div class="step">
+                    <i class="fas fa-file-download"></i>
+                    <p><strong>Step 5:</strong> She downloads the report and sees a prompt to consult with her healthcare provider, leaving her reassured and informed.</p>
+                </div>
             </div>
-        </section>
-        
+
+            <!-- Storyboard for Dr. Perez's Scenario -->
+            <div class="storyboard">
+                <div class="storyboard-header">
+                    <i class="fas fa-user-md"></i>
+                    <h4>Storyboard for Dr. Perez’s Scenario</h4>
+                </div>
+
+                <div class="step">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <p><strong>Step 1:</strong> Dr. Perez logs into BrainWave Diagnostics, accessing a dashboard with recent cases.</p>
+                </div>
+
+                <div class="step">
+                    <i class="fas fa-folder-open"></i>
+                    <p><strong>Step 2:</strong> He selects a patient case and uploads fMRI and qEEG scans.</p>
+                </div>
+
+                <div class="step">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p><strong>Step 3:</strong> The system processes the scans, showing a brief loading indicator.</p>
+                </div>
+
+                <div class="step">
+                    <i class="fas fa-chart-line"></i>
+                    <p><strong>Step 4:</strong> The detailed report appears, displaying key metrics like dopamine levels and connectivity.</p>
+                </div>
+
+                <div class="step">
+                    <i class="fas fa-file-export"></i>
+                    <p><strong>Step 5:</strong> Dr. Perez downloads a simplified version of the report for parent discussions and exports data for his records.</p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
