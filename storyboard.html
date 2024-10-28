@@ -71,7 +71,6 @@
                 margin-right: 10px;
             }
 
-            /* Flexbox to ensure correct alignment */
             .step {
                 display: flex;
                 align-items: center;
@@ -79,18 +78,24 @@
             }
 
             .step i {
-                flex-shrink: 0; /* Prevent icon from shrinking */
+                flex-shrink: 0;
                 font-size: 1.5rem;
-                margin-right: 30px;  /* Ensures space between icon and text */
+                margin-right: 30px;
                 color: #304c89;
             }
 
             .step p {
                 margin: 0;
                 padding: 0;
-                flex-grow: 1;  /* Allows the text to take remaining space */
+                flex-grow: 1;
             }
 
+            .storyboard-image img {
+                width: 100%;
+                border-radius: 8px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                margin-top: 1rem;
+            }
         </style>
     </head>
     <body>
@@ -141,6 +146,11 @@
                     <i class="fas fa-file-download"></i>
                     <p><strong>Step 5:</strong> She downloads the report and sees a prompt to consult with her healthcare provider, leaving her reassured and informed.</p>
                 </div>
+
+                <!-- Image for Sarah's Scenario -->
+                <div class="storyboard-image">
+                    <img src="https://github.com/user-attachments/assets/bb5e9aaa-8607-4c6b-9314-a9950c75659f" alt="Sarah's Scenario Storyboard Image" />
+                </div>
             </div>
 
             <!-- Storyboard for Dr. Perez's Scenario -->
@@ -173,6 +183,11 @@
                 <div class="step">
                     <i class="fas fa-file-export"></i>
                     <p><strong>Step 5:</strong> Dr. Perez downloads a simplified version of the report for parent discussions and exports data for his records.</p>
+                </div>
+
+                <!-- Placeholder Image for Dr. Perez's Scenario -->
+                <div class="storyboard-image">
+                    <img src="https://via.placeholder.com/800x400" alt="Dr. Perez's Scenario Storyboard Image" />
                 </div>
             </div>
         </div>
