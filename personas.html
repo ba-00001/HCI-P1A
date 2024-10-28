@@ -78,6 +78,20 @@
             .persona-details {
                 flex: 1;
             }
+
+            figure {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+            }
+
+            figcaption {
+                font-size: 0.9rem;
+                color: #555;
+                text-align: center;
+                margin-top: 0.5rem;
+            }
         </style>
     </head>
     <body>
@@ -98,8 +112,12 @@
             <div class="container">
                 <h2>Personas</h2>
 
+                <!-- Persona 1: Sarah Thompson -->
                 <div class="persona-section">
-                    <img src="https://github.com/user-attachments/assets/7b7de6c0-45c1-4c9f-8bcc-c5cc2382e602" alt="Sarah Thompson Image" class="persona-image" />
+                    <figure>
+                        <img src="https://github.com/user-attachments/assets/7b7de6c0-45c1-4c9f-8bcc-c5cc2382e602" alt="Sarah Thompson Image" class="persona-image" />
+                        <figcaption>Image source: LTX Studio</figcaption>
+                    </figure>
                     <div class="persona-details">
                         <h4>Persona 1: Parent of a Child with Suspected ADHD</h4>
                         <p><strong>Name:</strong> Sarah Thompson <br><strong>Age:</strong> 38 <br><strong>Occupation:</strong> Teacher</p>
@@ -119,8 +137,12 @@
                     </div>
                 </div>
 
+                <!-- Persona 2: Dr. David Perez -->
                 <div class="persona-section">
-                    <img src="https://github.com/user-attachments/assets/312ebaf9-ff9a-4a09-9fea-a177714588c8" alt="Dr. David Perez Image" class="persona-image" />
+                    <figure>
+                        <img src="https://github.com/user-attachments/assets/312ebaf9-ff9a-4a09-9fea-a177714588c8" alt="Dr. David Perez Image" class="persona-image" />
+                        <figcaption>Image source: LTX Studio</figcaption>
+                    </figure>
                     <div class="persona-details">
                         <h4>Persona 2: Healthcare Professional Specializing in ADHD</h4>
                         <p><strong>Name:</strong> Dr. David Perez <br><strong>Age:</strong> 45 <br><strong>Occupation:</strong> Pediatric Neurologist</p>

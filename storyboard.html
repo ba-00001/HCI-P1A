@@ -90,11 +90,24 @@
                 flex-grow: 1;
             }
 
+            figure {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 1rem;
+            }
+
             .storyboard-image img {
                 width: 100%;
                 border-radius: 8px;
                 box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-                margin-top: 1rem;
+            }
+
+            figcaption {
+                font-size: 0.9rem;
+                color: #555;
+                text-align: center;
+                margin-top: 0.5rem;
             }
         </style>
     </head>
@@ -147,10 +160,11 @@
                     <p><strong>Step 5:</strong> She downloads the report and sees a prompt to consult with her healthcare provider, leaving her reassured and informed.</p>
                 </div>
 
-                <!-- Image for Sarah's Scenario -->
-                <div class="storyboard-image">
+                <!-- Image with Caption for Sarah's Scenario -->
+                <figure class="storyboard-image">
                     <img src="https://github.com/user-attachments/assets/bb5e9aaa-8607-4c6b-9314-a9950c75659f" alt="Sarah's Scenario Storyboard Image" />
-                </div>
+                    <figcaption>Image source: LTX Studio for Sarah’s Scenario</figcaption>
+                </figure>
             </div>
 
             <!-- Storyboard for Dr. Perez's Scenario -->
@@ -172,7 +186,7 @@
 
                 <div class="step">
                     <i class="fas fa-spinner fa-spin"></i>
-                    <p><strong>Step 3:</strong> The system processes the scans, showing a stadistics of the reports.</p>
+                    <p><strong>Step 3:</strong> The system processes the scans, showing a brief loading animation.</p>
                 </div>
 
                 <div class="step">
@@ -185,10 +199,11 @@
                     <p><strong>Step 5:</strong> Dr. Perez downloads a simplified version of the report for parent discussions and exports data for his records.</p>
                 </div>
 
-                <!-- Placeholder Image for Dr. Perez's Scenario -->
-                <div class="storyboard-image">
+                <!-- Image with Caption for Dr. Perez's Scenario -->
+                <figure class="storyboard-image">
                     <img src="https://github.com/user-attachments/assets/a40faf9f-f319-4526-8775-473fb291759e" alt="Dr. Perez's Scenario Storyboard Image" />
-                </div>
+                    <figcaption>Image source: LTX Studio for Dr. Perez’s Scenario</figcaption>
+                </figure>
             </div>
         </div>
     </body>
