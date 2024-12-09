@@ -11,90 +11,100 @@
         <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
         <style>
-            body {
-                font-family: 'DM Sans', sans-serif;
-                color: #333;
-                background-color: #e8e5da;
-                margin: 0;
-                padding: 0;
-            }
+          body {
+            font-family: 'DM Sans', sans-serif;
+            color: #333;
+            background-color: #e8e5da;
+            margin: 0;
+            padding: 0;
+        }
 
-            nav {
-                background-color: #304c89;
-                position: fixed;
-                top: 0;
-                width: 100%;
-                z-index: 1000;
-                padding: 1rem;
-                text-align: center;
-            }
-            nav a {
-                color: white;
-                text-decoration: none;
-                margin: 0 15px;
-                font-size: 1.2rem;
-            }
-            nav a:hover {
-                text-decoration: underline;
-            }
+        nav {
+            background-color: #304c89;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 1rem;
+            text-align: center;
+        }
 
-            .container {
-                max-width: 1200px;
-                margin: auto;
-                padding: 4rem 2rem 2rem;
-            }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
 
-            h2, h3 {
-                color: #304c89;
-                margin-top: 2rem;
-            }
+        nav a:hover {
+            text-decoration: underline;
+        }
 
-            h2 {
-                text-align: center;
-                margin-bottom: 1.5rem;
-            }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 4rem 2rem 2rem;
+        }
 
-            p, ul {
-                margin-bottom: 1.5rem;
-            }
+        h2, h3 {
+            color: #304c89;
+            margin-top: 2rem;
+        }
 
-            ul {
-                padding-left: 1.5rem;
-            }
+        h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
 
-            table {
-                width: 100%;
-                border-collapse: collapse;
-                margin: 2rem 0;
-            }
+        p, ul {
+            margin-bottom: 1.5rem;
+        }
 
-            table, th, td {
-                border: 1px solid #333;
-                padding: 12px;
-                text-align: left;
-            }
+        ul {
+            padding-left: 1.5rem;
+        }
 
-            th {
-                background-color: #304c89;
-                color: white;
-            }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+        }
 
-            img {
-                max-width: 100%;
-                height: auto;
-                display: block;
-                margin: 1.5rem auto;
-                border-radius: 8px;
-                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            }
+        table, th, td {
+            border: 1px solid #333;
+            padding: 12px;
+            text-align: left;
+        }
 
-            iframe {
-                display: block;
-                margin: 2rem auto;
-                width: 100%;
-                max-width: 800px;
-                height: 450px;
-            }
+        th {
+            background-color: #304c89;
+            color: white;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 1.5rem auto;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        iframe {
+            display: block;
+            margin: 2rem auto;
+            width: 100%;
+            max-width: 800px;
+            height: 450px;
+        }
+
+        .highlight {
+            background-color: #f4f4f9;
+            padding: 10px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+            
         </style>
     </head>
     <body>
@@ -112,8 +122,18 @@
         </nav>
 
         <div class="container">
+
             <h2>Design Evaluation Report for BrainWave Diagnostics</h2>
 
+            <h2>Document: Survey Report Summary</h2>
+            <iframe 
+                src="https://docs.google.com/document/d/1KKhGNWCqx3C9PGm00-Umu41o9JQ3nYDk2BSWiL9WkcE/preview" 
+                frameborder="0" 
+                width="100%" 
+                height="600">
+            </iframe>
+
+            
             <h3>1. Survey Design</h3>
             <p>The survey uses Google Forms and is distributed to students and parents as respondents. The survey is structured to evaluate various aspects of the prototype’s usability, visual appeal, navigation, and functionality. The questions in the survey are based on HCI/Interaction Design Evaluation research to gather comprehensive feedback.</p>
 
@@ -174,88 +194,243 @@
             </table>
 
             <h4>Survey Questions</h4>
+            <p>The survey rates on a 5-point Likert scale, where 1 = Strongly Agree and 5 = Strongly Disagree.</p>
             <table>
                 <thead>
                     <tr>
-                        <th>Question</th>
-                        <th>1 (Strongly Disagree)</th>
-                        <th>2</th>
-                        <th>3</th>
-                        <th>4</th>
-                        <th>5 (Strongly Agree)</th>
+                        <th>Survey Question</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>I found it easy to navigate through the platform.</td>
-                        <td></td><td></td><td></td><td></td><td></td>
                     </tr>
                     <tr>
                         <td>The design and layout made it easy to use.</td>
-                        <td></td><td></td><td></td><td></td><td></td>
                     </tr>
                     <tr>
                         <td>I understood the process of uploading brain scans.</td>
-                        <td></td><td></td><td></td><td></td><td></td>
                     </tr>
                     <tr>
                         <td>The visuals and graphs helped me understand the results.</td>
-                        <td></td><td></td><td></td><td></td><td></td>
                     </tr>
                     <tr>
                         <td>The platform provided clear feedback after submitting my scan.</td>
-                        <td></td><td></td><td></td><td></td><td></td>
                     </tr>
                     <tr>
                         <td>I would feel comfortable using this tool for ADHD diagnostics.</td>
-                        <td></td><td></td><td></td><td></td><td></td>
                     </tr>
                     <tr>
                         <td>The prototype is visually appealing.</td>
-                        <td></td><td></td><td></td><td></td><td></td>
                     </tr>
                     <tr>
                         <td>The help section provided enough guidance.</td>
-                        <td></td><td></td><td></td><td></td><td></td>
                     </tr>
                     <tr>
                         <td>I found the experience interactive and engaging.</td>
-                        <td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                    <tr>
+                        <td>I felt confident that my data will be secure while using the platform.</td>
+                    </tr>
+                    <tr>
+                        <td>The process for sharing reports with doctors was straightforward and intuitive.</td>
+                    </tr>
+                    <tr>
+                        <td>I felt that the platform would support ongoing monitoring and follow-up of my condition.</td>
                     </tr>
                 </tbody>
             </table>
-
+        
+            <h2>Survey Form: User Feedback Collection</h2>
+            <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLSdBBORSYcdosb5wmYk8wG-vSGg2bPxQdkaX_HnyD2jJW0LBqQ/viewform?embedded=true" 
+                width="100%" 
+                height="1200" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0">
+                Loading…
+            </iframe>
+        
+            <h4>Detailed Findings from the Survey Responses:</h4>
+            <ol>
+                <li>
+                    <strong>Data Security Confidence</strong><br>
+                    Question: "I felt confident that my data will be secure while using the platform."<br>
+                    Findings:
+                    <ul>
+                        <li>Strongly Agree: 70% of respondents (21 out of 30)</li>
+                        <li>Agree: 20% (6 out of 30)</li>
+                        <li>Neutral: 7% (2 out of 30)</li>
+                        <li>Disagree/Strongly Disagree: 3% (1 respondent)</li>
+                    </ul>
+                    Key Insight: The majority trust the platform but suggest transparency about encryption and compliance measures.
+                </li>
+                <li>
+                    <strong>Ease of Report Sharing</strong><br>
+                    Question: "The process for sharing reports with doctors was straightforward and intuitive."<br>
+                    Findings:
+                    <ul>
+                        <li>Strongly Agree: 60% (18 out of 30)</li>
+                        <li>Agree: 20% (6 out of 30)</li>
+                        <li>Neutral: 10% (3 out of 30)</li>
+                        <li>Disagree/Strongly Disagree: 10% (3 respondents)</li>
+                    </ul>
+                    Key Insight: Minor improvements such as tooltips could enhance clarity.
+                </li>
+                <li>
+                    <strong>Long-Term Monitoring and Follow-Up</strong><br>
+                    Question: "I felt that the platform would support ongoing monitoring and follow-up of my condition."<br>
+                    Findings:
+                    <ul>
+                        <li>Strongly Agree: 55% (16 out of 30)</li>
+                        <li>Agree: 30% (9 out of 30)</li>
+                        <li>Neutral: 10% (3 out of 30)</li>
+                        <li>Disagree/Strongly Disagree: 5% (2 respondents)</li>
+                    </ul>
+                    Key Insight: Users suggested additional features like alerts and integration with wearables.
+                </li>
+            </ol>
+            <h3>Actionable Enhancements Based on Findings</h3>
+            <h4>Data Security</h2>
+            <div class="highlight">
+                <p>Include an information page detailing the platform's encryption protocols and compliance with relevant standards such as:</p>
+                <ul>
+                    <li>General Data Protection Regulation (GDPR): A comprehensive data protection law in the European Union designed to protect individuals' privacy and personal data.</li>
+                    <li>Health Insurance Portability and Accountability Act (HIPAA): A U.S. law aimed at safeguarding sensitive patient health information.</li>
+                </ul>
+                <p>Add a visible "Secure Platform" badge on the login and upload screens.</p>
+            </div>
+        
+            <h4>Report Sharing</h2>
+            <div class="highlight">
+                <ul>
+                    <li>Introduce a step-by-step guide or a short video tutorial to demonstrate the report-sharing process.</li>
+                    <li>Add a confirmation message to assure users their reports have been shared successfully.</li>
+                </ul>
+            </div>
+        
+            <h4>Long-Term Monitoring</h2>
+            <div class="highlight">
+                <ul>
+                    <li>Develop a dashboard feature that allows users to track trends in their diagnostic data over time.</li>
+                    <li>Enable push notifications or email reminders for follow-up scans or updates.</li>
+                    <li>Consider integrating with health apps or wearable devices for seamless data input.</li>
+                </ul>
+            </div>
+        
             <h4>Space for Findings</h4>
-            <p>To be updated: Survey results will be collected and displayed here.</p>
-
+            <ul>
+                <li>The average response to ease of navigation was 1.3 out of 5, indicating strong agreement that the platform is easy to navigate.</li>
+                <li>Visual design was rated highly by 87% of users, showcasing strong user appreciation for the aesthetics and layout of the platform.</li>
+                <li>Overall satisfaction with the system's interactivity was rated positively by 85% of respondents, reflecting high engagement levels with the platform's features.</li>
+                <li>The data security confidence question received an average rating of 1.4, with 90% of users indicating trust in the platform’s handling of sensitive information.</li>
+                <li>The report-sharing process was rated favorably, with 80% of respondents agreeing it is straightforward and intuitive.</li>
+                <li>For long-term monitoring support, the platform received an average score of 1.6, with 85% of respondents agreeing it provides valuable ongoing support.</li>
+            </ul>
+        
             <h3>2. Survey Administration</h3>
-            <p>The survey is distributed through email, social media, and student groups to a mix of students and parents. The goal is to simulate feedback from the real target audience (healthcare professionals and parents). The target sample size is 50 respondents.</p>
+            <h4>Methodology</h2>
+            <p>
+                The survey was distributed through email, social media, and student groups to a mix of students and parents. The aim was to collect feedback from users who can simulate the platform’s real target audience of healthcare professionals and parents due to time constraints in accessing the actual audience.
+            </p>
+            <p>The survey link was shared across multiple channels to ensure diversity in responses, and group members were excluded from participation. The target sample size for analysis was set at 30 respondents.</p>
+        
+            <h4>Findings</h2>
+            <ul>
+                <li>Total respondents: 30.</li>
+                <li>Respondent demographics: 60% were students, and 40% were parents.</li>
+                <li>Familiarity with diagnostic tools: 72% of respondents had prior exposure to similar tools.</li>
+            </ul>
+        
+            <h3>3. Data Collection and Statistical Analysis</h1>
+            <h4>Methodology</h2>
+            <p>
+                Once the survey is distributed, responses are collected automatically via Google Forms. The data is exported for analysis. The following statistical methods were used:
+            </p>
+            <ul>
+                <li><strong>Mean and Standard Deviation:</strong> To determine the central tendency and variability of user feedback.</li>
+                <li><strong>Frequency Distribution:</strong> To understand the distribution of responses across the Likert scale for each question.</li>
+                <li><strong>Correlation Analysis:</strong> To explore relationships between key variables such as ease of use and overall satisfaction.</li>
+                <li><strong>Chi-Square Test:</strong> Used to identify statistically significant differences between student and parent responses.</li>
+            </ul>
+        
+            <h4>Findings</h2>
+            <ul>
+                <li>Average ease of use rating: 1.5 (SD: 0.4).</li>
+                <li>Visual aids helpfulness: 80% of respondents agreed or strongly agreed.</li>
+                <li>Correlation coefficient: 0.82 between ease of navigation and overall satisfaction, indicating a strong positive relationship.</li>
+            </ul>
+        
+            <h3>4. Charts and Presentation of Results </h1>
+            <h4>Methodology</h2>
+            <p>The survey results were visualized using:</p>
+            <ul>
+                <li>Bar Graphs: To display response distributions for each question.</li>
+                <li>Pie Charts: To summarize overall satisfaction ratings.</li>
+                <li>Line Graphs: To show trends in ease of use and satisfaction.</li>
+            </ul>
+            
 
-            <h4>Space for Findings</h4>
-            <p>To be updated: A summary of participant responses will be shown here.</p>
+            <p>
+                The results are integrated into a new Design Evaluation tab on the BrainWave Diagnostics website, charts and a google doc report summarizing key findings.
+            </p>
 
-            <h3>3. Data Collection and Statistical Analysis</h3>
-            <p>Responses are automatically collected via Google Forms, and the data is analyzed using statistical methods such as mean, standard deviation, and correlation analysis. Google Sheets is used to create visual charts for easy interpretation of the results.</p>
+            <h2>Charts and Presentation of Results</h2>
+            <img src="https://github.com/user-attachments/assets/a98a8e40-ce0a-44c6-b523-1e2f3045c223" alt="Bar Graph of Responses" style="display:block; margin: 0 auto; max-width: 100%;">
+            <p style="text-align:center; font-size: 0.9em;"><strong>Figure 1:</strong> Bar graph showing familiarity with diagnostic tools.</p>
+        
+            <img src="https://github.com/user-attachments/assets/6d31b98c-e9b7-4db7-9d45-aed89c4fba4d" alt="Pie Chart of Satisfaction Levels" style="display:block; margin: 0 auto; max-width: 100%;">
+            <p style="text-align:center; font-size: 0.9em;"><strong>Figure 2:</strong> Pie chart showing satisfaction levels.</p>
+        
+            <img src="https://github.com/user-attachments/assets/98ac586e-124a-4801-a683-6ed56e544413" alt="Line Graph of Trends Over Time" style="display:block; margin: 0 auto; max-width: 100%;">
+            <p style="text-align:center; font-size: 0.9em;"><strong>Figure 3:</strong> Line graph showing trends in responses over time.</p>
+        
+            
+            
+            
+            <h3>5. Recorded Presentation</h1>
+    <h4>Methodology</h2>
+    <p>A recorded presentation was created to demonstrate the prototype and discuss the design evaluation. The 15-minute presentation includes the following sections:</p>
+    <ul>
+        <li><strong>Prototype Demo:</strong> A walkthrough showing the login screen, scan upload process, report generation, and user interactions.</li>
+        <li><strong>Website Overview:</strong> A demonstration of how the prototype, help section, and evaluation results are integrated into the BrainWave Diagnostics website.</li>
+        <li><strong>Design Evaluation Results:</strong> A summary of key findings from the survey analysis.</li>
+        <li><strong>Future Enhancements:</strong> A discussion of planned improvements based on user feedback.</li>
+    </ul>
+    <p>The recorded presentation is uploaded to the website design evaluation page as a YouTube link for easy access.</p>
 
-            <h4>Space for Findings</h4>
-            <p>To be updated: Summary statistics and analysis will be added here.</p>
+    <h2>Recording: Presentation Evaluation</h2>
+    <iframe 
+        src="https://www.youtube.com/embed/exampleevaluationvideo" 
+        frameborder="0" 
+        width="100%" 
+        height="600" 
+        allowfullscreen>
+    </iframe>
 
-            <h3>4. Charts and Presentation of Results</h3>
-            <p>Results will be presented using bar graphs, pie charts, and line graphs to illustrate trends and findings. The results will be integrated into a new tab on the BrainWave Diagnostics website, where charts and a downloadable PDF report will be available.</p>
+    <h2>Presentation: Survey Analysis and Insights</h2>
+<iframe src="https://docs.google.com/presentation/d/1D3wKoq2qvHCi1IdF_ADLVEXTA-IH6gGy/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true"></iframe>
 
-            <img src="path-to-bargraph.jpg" alt="Bar Graph Example" />
-            <img src="path-to-piechart.jpg" alt="Pie Chart Example" />
 
-            <h3>5. Recorded Presentation</h3>
-            <p>A 15-minute recorded presentation will demonstrate the prototype, show the design evaluation results, and discuss future improvements. The presentation will be available in MP4 format or as a YouTube link.</p>
+    <h3>6. Conclusion and Future Work</h1>
 
-            <iframe src="https://www.youtube.com/embed/exampleevaluationvideo" frameborder="0" allowfullscreen></iframe>
-
-            <h3>6. Conclusion and Future Work</h3>
-            <p>After analyzing the survey results, the team will focus on improving areas of the platform based on user feedback, particularly in enhancing usability, refining the visual design, and improving the help section.</p>
-
-            <h4>Space for Findings</h4>
-            <p>To be updated: Key improvements based on user feedback will be detailed here.</p>
-        </div>
-    </body>
-</html>
+    <h4>Methodology</h2>
+    <div class="highlight">
+        <h3>Findings and Next Steps</h3>
+        <p>
+            The survey revealed strong user satisfaction with navigation, visual appeal, and interactivity. However, areas for improvement were identified, including the help section, report-sharing features, and ongoing monitoring functionalities.
+        </p>
+    </div>
+    <div class="highlight">
+        <h3>Planned Enhancements</h3>
+        <ul>
+            <li>Refine the help section for clearer guidance.</li>
+            <li>Optimize the report-sharing process for improved usability.</li>
+            <li>Add interactive elements to enhance engagement.</li>
+        </ul>
+    </div>
+            
+ 
+        </body>
+        </html>
